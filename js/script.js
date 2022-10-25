@@ -12,7 +12,7 @@ function carregarLista () {
 //Atendendo ao requisito de criação de um componente dinâmico:
 function inserirItem (lista) {
     const insercao = `
-    <div class="col-lg-6">
+    <div class="col-lg-4">
         <a class="portfolio-item" href="#!">
             <div class="caption">
                     <div class="caption-content">
@@ -27,7 +27,7 @@ function inserirItem (lista) {
                     </div>
     `
 
-    container.insertAdjacentHTML("afterbegin", insercao)
+    container.insertAdjacentHTML("beforeend", insercao)
 }
 
 carregarLista()
@@ -38,7 +38,7 @@ function inserirNovoItem () {
     let complemento = document.getElementById('complemento').value
     let contato = document.getElementById('contato').value
     const novaLista = `
-    <div class="col-lg-6">
+    <div class="col-lg-4">
         <a class="portfolio-item" href="#!">
             <div class="caption">
                     <div class="caption-content">
@@ -52,7 +52,7 @@ function inserirNovoItem () {
                         </a>
                     </div>`
 
-    container.insertAdjacentHTML('afterbegin', novaLista)
+    container.insertAdjacentHTML('beforeend', novaLista)
     console.log(novaLista)
 }
 

@@ -19,17 +19,43 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-primary bg-gradient sticky-top d-flex">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand link-light me-auto navItem" href="#">Descarte Certo João Pessoa</a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link link-light px-3 navItem" href="#">Página inicial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-light px-3 navItem" href="#">Contato</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-light px-3 navItem" href="#">Sobre nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-light px-3 navItem" href="#">Parceiros</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <!-- Callout-->
         <section class="callout" id="callout">
-            <div class="container px-4 px-lg-5 text-center corrigir">
-                <h2 class="mx-auto mb-5">
-                    Descarte certo João Pessoa
-                </h2>
-                <h4>Sua fonte de informação sobre descarte apropriado <br> de lixo eletrônico na cidade de João Pessoa.</h4>
-                <br>
-                <br>
-                <br>
-                <a class="btn btn-primary btn-xl" href="#portfolio">Conhecer</a>
+            <div class="container px-4 px-lg-5 text-center d-flex align-items-center">
+                <div>
+                    <h2 class="mx-auto mb-4">Descarte certo João Pessoa</h2>
+                    <h5>Esta página tem por finalidade trazer a conhecimento público os pontos de descarte de lixo eletrônico na cidade de João Pessoa. Devido a pouco interesse do serviço público municipal, não há uma lista oficial atualizada destes pontos. Assim, convidamos a população pessoense para contribuir com a formação de uma lista extraoficial com os pontos de coleta ativos. Verifique a lista abaixo e contribua com algum ponto que conheça.</h5>
+                    <a class="btn btn-primary btn-xl mt-4" href="#portfolio">Conhecer</a>
+                </div>
+                <div>
+                    <img id="imagemMain" src="./assets/img/7.png" alt="Lixo eletrônico e seus impactos socioambientais">
+                </div>
+                <!-- <h4>Sua fonte de informação sobre descarte apropriado <br> de lixo eletrônico na cidade de João Pessoa.</h4> -->
             </div>
         </section>
         <!-- Portfolio-->
@@ -38,25 +64,26 @@
                 <div class="content-section-heading text-center">
                     <h3 class="text-secondary mb-0">Lista completa</h3>
                     <h2 class="mb-5">Pontos de descarte</h2>
+                    <form class="d-flex mb-3 form-inline" role="search">
+                        <input class="form-group me-1" type="search" placeholder="Pesquisar por rua, cidade ou UF" aria-label="Search">
+                        <button class="btn btn-primary" type = "submit">Pesquisar</button>
+                    </form>
                 </div>
                 <div class="row gx-0" id="inserirAqui">
                     <!-- Inserido através do JavaScript -->
-                    <p class="source">Fonte: Prefeitura de João Pessoa.</p>
                 </div>
+                <p class="source">Fonte: Prefeitura de João Pessoa.</p>
             </div>
         </section>
         <!-- Call to Action-->
         <section class="content-section bg-primary text-white">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">Encontrou alguma informação desatualizada?</h2>
-                <!-- <a class="btn btn-xl btn-light me-4" href="#!">Sugerir atualização</a> -->
-
                 <!-- Modal -->
                 <div class="container mt-3">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                        <a class="btn btn-xl btn-light" href="#!">Sugerir atualização</a>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <a class="btn btn-light btn-xl" href="#!">Sugerir atualização</a>
                     </button>
-
                     <!-- The Modal -->
                     <div class="modal" id="myModal">
                         <div class="modal-dialog">
@@ -116,3 +143,12 @@
         <script src="js/script.js" type="module"></script>
     </body>
 </html>
+
+<!-- Metas adicionais:
+
+- Arrumar o hover do botão "Sugerir atualização"
+- Organizar o layout do formulário
+- Inserir um footer com os parceiros
+- Inserir uma navbar
+- Mudar o layout da página para suportar mais locais por linha
+-  -->

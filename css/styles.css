@@ -98,6 +98,10 @@ body {
   margin-top: -9rem;
 }
 
+.navItem:hover {
+  font-weight: bold;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -11429,7 +11433,7 @@ html {
 }
 
 .callout {
-  padding: 15rem 0;
+  padding: 3rem 0;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("https://images.unsplash.com/photo-1558505212-da33bc774163?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   background-position: center center;
   background-repeat: no-repeat;
@@ -11579,4 +11583,9 @@ footer.footer .social-link:hover {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+#imagemMain {
+  height: 500px;
+  width: 500px;
 }
